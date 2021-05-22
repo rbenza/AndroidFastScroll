@@ -125,6 +125,17 @@ public class FastScrollerBuilder {
     }
 
     @NonNull
+    public FastScrollerBuilder useCustomStyle() {
+        Context context = mView.getContext();
+        mTrackDrawable = Utils.getGradientDrawableWithTintAttr(R.drawable.afs_track,
+                R.attr.colorControlNormal, context);
+        mThumbDrawable = Utils.getGradientDrawableWithTintAttr(R.drawable.afs_thumb,
+                R.attr.colorControlActivated, context);
+        mPopupStyle = PopupStyles.DEFAULT;
+        return this;
+    }
+
+    @NonNull
     public FastScrollerBuilder useMd2Style() {
         Context context = mView.getContext();
         mTrackDrawable = Utils.getGradientDrawableWithTintAttr(R.drawable.afs_md2_track,
