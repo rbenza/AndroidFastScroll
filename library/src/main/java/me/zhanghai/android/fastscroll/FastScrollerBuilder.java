@@ -142,7 +142,7 @@ public class FastScrollerBuilder {
                 R.attr.colorControlNormal, context);
         mThumbDrawable = Utils.getGradientDrawableWithTintAttr(R.drawable.afs_md2_thumb,
                 R.attr.colorControlActivated, context);
-        mPopupStyle = PopupStyles.MD2;
+        mPopupStyle = PopupStyles.THIRD;
         return this;
     }
 
